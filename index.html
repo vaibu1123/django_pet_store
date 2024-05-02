@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pet store</title>
+</head>
+<body>
+    <h1 align="center">Login page</h1>
+    <form  method="post">
+        {% csrf_token %}
+        <table border="2" align="center">
+            <tr>
+                <th><label>Name</label></th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th><label>price</label></th>
+                <td><input type="number" name="price"></td>
+            </tr> 
+            <tr>
+                <th><label>Details</label></th>
+                <td><input type="text" name="details"></td>
+            </tr>
+            <tr>
+                <th><label>Category</label></th>
+                <td><input type="text" name="category"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" name="submit"></td>
+
+            </tr>
+            
+        </table>
+    </form>
+</body>
+</html>
